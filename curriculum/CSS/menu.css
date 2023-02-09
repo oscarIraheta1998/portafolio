@@ -1,0 +1,155 @@
+:root {
+  --z-index-encima: 1;
+}
+.menu {
+  width: 100%;
+  position: fixed;
+  background-color: rgba(2, 0, 21, 0.574);
+  z-index: var(--z-index-encima);
+}
+.CV {
+  padding: 1em 1em;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  font-size: x-large;
+  float: left;
+  color: var(--color-text-encendido);
+}
+.p-logo {
+  color: transparent;
+  font-size: 1.4rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.p-logo::before {
+  content: "<Iraheta/>";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  border-right: 4px solid var(--colorTreceario);
+  overflow: hidden;
+  color: var(--color-text-encendido);
+  animation: load91371 3s linear infinite;
+}
+
+@keyframes load91371 {
+  0%,
+  10%,
+  100% {
+    width: 0;
+  }
+  10%,
+  20%,
+  30%,
+  40%,
+  50%,
+  60%,
+  70%,
+  80%,
+  90%,
+  100% {
+    border-right-color: transparent;
+  }
+  11%,
+  21%,
+  31%,
+  41%,
+  51%,
+  61%,
+  71%,
+  81%,
+  91% {
+    border-right-color: #17feff;
+  }
+  60%,
+  80% {
+    width: 100%;
+  }
+}
+
+.navMenu {
+  width: max-content 800px;
+  display: flex;
+  float: right;
+}
+.iten-menu {
+  padding: 8px 10px;
+  margin: 0 5px;
+  display: block;
+  position: relative;
+  color: var(--color-text-apagado);
+
+  text-decoration: none;
+}
+.iten-menu:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 3px;
+  background-color: var(--color-text-encendido);
+  transition: width 0.5s;
+}
+.iten-menu:hover {
+  color: var(--color-text-encendido);
+  text-shadow: 0 0 5px var(--colorTreceario), 0 0 25px var(--colorTreceario),
+    0 0 50px var(--colorTreceario), 0 0 100px var(--colorTreceario);
+}
+.iten-menu:hover:before {
+  width: 100%;
+  color: var(--color-text-encendido);
+  text-shadow: 0 0 5px var(--colorTreceario), 0 0 25px var(--colorTreceario),
+    0 0 50px var(--colorTreceario), 0 0 100px var(--colorTreceario);
+}
+.icono,
+.cancelar {
+  display: none;
+}
+@media (max-width: 800px) {
+  .menu {
+    height: 50px;
+  }
+  .icono {
+    width: 50px;
+    height: 50px;
+    color: var(--color-text-encendido);
+    align-items: center;
+    display: block;
+    background: none;
+    border: none;
+    float: right;
+    stroke: var(--color-text-encendido);
+  }
+  .cancelar {
+    color: red;
+    display: block;
+  }
+  .cancelar:hover {
+    color: rgb(176, 13, 13);
+  }
+
+  .navMenu {
+    width: 100%;
+    height: calc(100% - 50px);
+    height: -moz-calc(100% - 50px);
+    height: -webkit-calc(100% - 50px);
+    top: 50px;
+    background-color: rgba(2, 0, 21, 0.948);
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    overflow-y: auto;
+    clip-path: circle(0% at top left);
+    transition: clip-path 0.4s;
+  }
+  .navMenu:target {
+    clip-path: circle(150% at top left);
+  }
+}

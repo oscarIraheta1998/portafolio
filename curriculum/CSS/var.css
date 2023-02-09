@@ -1,0 +1,7 @@
+:root {
+  --colorPrimario: #252525;
+  --colorSecundario: white;
+  --colorTreceario: #17feff;
+  --color-text-apagado: rgb(125, 125, 125);
+  --color-text-encendido: #eee;
+}

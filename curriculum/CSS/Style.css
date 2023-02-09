@@ -1,0 +1,63 @@
+@import "../CSS/var.css";
+@import "../CSS/menu.css";
+@import "../CSS/header.css";
+@import "../CSS/contenido.css";
+@import "../CSS/card.css";
+@import "../CSS/card2.css";
+@import "../CSS/card3.css";
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding: 50px;
+}
+body {
+  background-color: var(--colorPrimario);
+  background-attachment: fixed;
+  background-size: cover;
+  min-width: 160px;
+}
+main {
+  max-width: 1200px;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+.maxW {
+  width: 100vw;
+  max-width: 1200px;
+}
+button {
+  padding: 1.3em 3em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  border: none;
+  border-radius: 45px;
+  cursor: pointer;
+  outline: none;
+  color: var(--colorPrimario);
+  background-color: var(--colorSecundario);
+  box-shadow: 0px 8px 15px var(--colorPrimario);
+  transition: all 0.3s ease 0s;
+}
+button:hover {
+  background-color: var(--colorTreceario);
+  box-shadow: 0px 15px 0px var(--colorTreceario);
+  color: var(--colorSecundario);
+  transform: translateY(-7px);
+}
+button:active {
+  transform: translateY(-1px);
+}
