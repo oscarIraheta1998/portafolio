@@ -39,7 +39,7 @@
             </div>
             <div class="row card3-botones-contenedor">
                 <a href="#" class="card3-button-ir"><button card3-button>ver web</button></a>
-                <a href="#" class="card3-button-repositorio"><?php echo $iconosRedes['Github'];?></a>
+                <a href="https://github.com/oscarIraheta1998/portafolio/tree/main/curriculum" class="card3-button-repositorio" target="_blank"><?php echo $iconosRedes['Github'];?></a>
             </div>
             
         </div>
