@@ -5,7 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="../CSS/Style.css" rel="stylesheet" type="text/css">
-  <title>Document</title>
+  <title>Oscar Iraheta</title>
+  <link rel="icon" href="/IMG/otros/foto-curriculum.png">
   <?php include("../IMG/iconosSVG/iconos-sistema.php");?>
 </head>
 <body class="column">

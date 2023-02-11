@@ -5,7 +5,9 @@
 .article-titulo {
   font-size: 10vw;
   background: linear-gradient(var(--colorSecundario), var(--colorPrimario));
+  -webkit-background-clip: text;
   background-clip: text;
+  -webkit-text-fill-color: transparent;
   color: transparent;
   opacity: 0.5;
 }
